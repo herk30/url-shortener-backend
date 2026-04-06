@@ -56,6 +56,3 @@ app.get("/:shortCode", async (req, res) => {
   res.redirect(url.originalUrl);
 });
 
-app.listen(3000, () => {
-  console.log(`Server running on ${PORT}`);
-});
