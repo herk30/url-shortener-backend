@@ -14,7 +14,6 @@ const mongoURI = process.env.MONGODB_URI;
 mongoose.connect(mongoURI)
   .then(() => console.log("Connect"))
   .catch((err) => console.log("Error", err));
-mongoose.connect("mongodb://127.0.0.1:27017/url_shortener");
 
 const urlSchema = new mongoose.Schema({
   originalUrl: String,
