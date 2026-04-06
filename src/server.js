@@ -54,4 +54,8 @@ app.get("/:shortCode", async (req, res) => {
 
   res.redirect(url.originalUrl);
 });
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, () => {
+  console.log(`Server đang chạy ngon lành trên cổng ${PORT}`);
+});
